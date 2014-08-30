@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Ankush Agrawal</title>
+	<meta name="author" content="Ankush Agrawal" />
+	<meta name="description" content="Ankush Agrawal's Personal Website" />
+	<meta name="keywords"  content="Ankush, Developer, Software" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="examples.css" />
+
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<h1>Ankush Agrawal</h1>
+		<h2> Entrepreneur | Optimist | Engineer </h2>
+	</div>
+	<div class="section" id="section1">
+	    <div class="slide ">
+	    	<h1>Horizontal Slide</h1>
+	    </div>
+	    <div class="slide active">
+	    	<h1>To the left or right</h1>
+	    </div>
+	    <div class="slide">
+	    	<h1>To the right</h1>
+	    </div>
+	    <div class="slide">
+	    	<h1>And back again</h1>
+	    </div>
+	</div>
+	<div class="section" id="section2">
+		<h1>What section will go here?</h1>
+	</div>
+	<div class="section" id="section3">
+		<h1>Contact me?</h1>
+	</div>
+</div>
+
+</body>
+</html>
