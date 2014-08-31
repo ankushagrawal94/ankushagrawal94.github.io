@@ -21,7 +21,42 @@
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('#fullpage').fullpage({
-				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+				verticalCentered: true,
+		        resize : true,
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		        anchors:['Home', 'About', 'Skills', 'Projects', 'Contact'],
+		        scrollingSpeed: 700,
+		        menu: '#menu',
+		        navigation: true,
+		        navigationPosition: 'right',
+		        navigationTooltips: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
+		        slidesNavigation: true,
+		        slidesNavPosition: 'bottom',
+		        loopBottom: false,
+		        loopTop: false,
+		        loopHorizontal: false,
+		        autoScrolling: true,
+		        scrollOverflow: false,
+		        css3: false,
+		        paddingTop: '3em',
+		        paddingBottom: '10px',
+		        normalScrollElements: '#element1, .element2',
+		        normalScrollElementTouchThreshold: 5,
+		        keyboardScrolling: true,
+		        touchSensitivity: 15,
+		        continuousVertical: false,
+		        animateAnchor: true,
+		        sectionSelector: '.section',
+		        slideSelector: '.slide',
+
+		        //events
+		        onLeave: function(index, nextIndex, direction){},
+		        afterLoad: function(anchorLink, index){},
+		        afterRender: function(){},
+		        afterResize: function(){},
+		        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+		        onSlideLeave: function(anchorLink, index, slideIndex, direction){}
+
 			});
 		});
 	</script>
@@ -29,11 +64,31 @@
 </head>
 <body>
 
+<ul id="menu">
+	<li data-menuanchor="homePage" class="active"><a href="#Home">Ankush Agrawal</a></li>
+	<li data-menuanchor="firstPage" ><a href="#About">About</a></li>
+	<li data-menuanchor="secondPage"><a href="#Skills">Skills</a></li>
+	<li data-menuanchor="thirdPage" ><a href="#Projects">Projects</a></li>
+	<li data-menuanchor="fourthPage"><a href="#Contact">Contact</a></li>
+</ul>
+
+<!--
+<div id="header">
+	<a href = "#Home">//Ankush Agrawal</a>
+	<ul>
+		<li><a href = "#About">About</a><li>
+		<li><a href = "#Skills">Skills</a><li>
+		<li><a href = "#Projects">Projects</a><li>
+		<li><a href = "#Contact">Contact</a><li>
+	</ul>
+</div>
+-->
 <div id="fullpage">
 	<div class="section active" id="section0">
 		<h1>Ankush Agrawal</h1>
 		<h2> Entrepreneur | Optimist | Engineer </h2>
 	</div>
+	<!--
 	<div class="section" id="section1">
 	    <div class="slide ">
 	    	<h1>Horizontal Slide</h1>
@@ -48,10 +103,61 @@
 	    	<h1>And back again</h1>
 	    </div>
 	</div>
+	-->
+	<div class="section" id="section1">
+		<div class="intro">
+			<h1> Who Am I? <h1>
+			<p>My name is Ankush Agrawal. I am a business minded, technically focused student at UC San Diego. I am driven by the thrill of creation, stories of success, and an insatiable desire to make the world a better place. One step at a time, I am gaining the skills I need to make it happen.</p>
+		</div>
+	</div>
 	<div class="section" id="section2">
-		<h1>What section will go here?</h1>
+		<div class="intro">
+
+			<div class="container">
+			    <div class="skills">
+			        <section class="column">
+			            <span class="ss-desktop"></span>
+			            <p>
+			                <strong>iOS Development</strong><br>
+			                <span class="column-text">From the humble days of hello world! in Objective-C to my published applications in Swift, iOS development has become my forte. I like working the full stack in iOS. I look forward to continuing work in this environment and my continued growth as an iOS developer</span>
+			            </p>
+			        </section>
+			        <section class="column">
+			            <span class="ss-screwdrivermobile"></span>
+			            <p>
+			                <strong>Scripting</strong><br>
+			                <span class="column-text">I love writing little (or not so little scripts). Some would call the tasks I don't want to do a result of laziness. I see these as opportunities to practice development and better utilize my time. I try to write scripts for everything to free up more time in the long run</span>
+			            </p>
+			        </section>
+			        <section class="column omega">
+			            <span class="ss-flask"></span>
+			            <p>
+			                <strong>Business</strong><br>
+			                <span class="column-text">Business, Entrepreneurship & Finance. I spend my time reading and learning about these topics to better prepare myself for my goals.</span>
+			            </p>
+			        </section>
+			    </div>
+			</div>
+<!--
+			<h1> Skills <h1>
+			<p>iOS Development</p>
+			<p>From the humble days of hello world! in Objective-C to my published applications in Swift, iOS development has become my forte. I look forward to continuing work in this environment and my continued growth as an iOS developer </p>
+			<p>Scripting</p>
+			<p>I love writing little (or not so little scripts). Some would call the tasks I don't want to do a result of laziness. I see these as opportunities to practice development and better utilize my time. I try to write scripts for everything to free up more time in the long run</p>
+			<p>Business</p>
+			<p>Business, Entrepreneurship & Finance. I spend my time reading and learning about these topics to better prepare myself for my goals.</p>
+			<p>Learning</p>
+			<p> My thirst for learning is insatiable. I like to learn about anything and everything. The challenge for me is to stay focused! </p>
+			<p>List Making</p>
+			<p>Most people don't consider this a skill, but it is something so inherent to my way of thinking. I make lists for everything. Yes everything. I have a list of lists to keep my lists organized as well.
+			<p>What is next for me?</p>
+			<p>There are all kinds of things I'd like to be doing and learning. So many ideas and so little time. Some of areas of study for the near future: Machine Learning, Data Analytics, and Web Development </p> -->
+		</div>
 	</div>
 	<div class="section" id="section3">
+		<h1>Section 3: Projects</h1>
+	</div>
+	<div class="section" id="section4">
 		<h1>Contact me?</h1>
 	</div>
 </div>
