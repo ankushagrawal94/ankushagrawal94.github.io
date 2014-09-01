@@ -965,9 +965,8 @@ nav ul.background--dark li a, nav ul.background--light li a {
     color: #45484B;
 }
 .works .works-container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 200px;
+    margin-right: 200px;
     clear: both;
 }
 .works .works-container:after {
@@ -976,25 +975,27 @@ nav ul.background--dark li a, nav ul.background--light li a {
     clear: both;
 }
 .works .works-content {
-    line-height: 2em;
+    line-height: 1.3em;
 }
 .works .works-content ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    max-width: 1200px
 }
 .works .works-content ul li {
     display: inline-block;
-    float: center;
+    float: left;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
     padding: 2.35765%;
     background-color: #fff;
     margin-bottom: 12px;
-    padding-bottom: 0;
-    padding-top: 0;
-    border-radius: 4px;
+    padding-bottom: 10px;
+    padding-top: ;
+    border-radius: 8px;
+    font-size: .65em;
 }
 .works .works-content ul li:last-child {
     margin-right: 0;
