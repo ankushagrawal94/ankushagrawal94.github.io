@@ -957,7 +957,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
     font-weight: 300;
 }
 .works {
-    background-color: #e5e5e5;
+    /*background-color: #e5e5e5;*/
     margin: 0;
     padding: 0;
     padding-top: 36px;
@@ -985,7 +985,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
 }
 .works .works-content ul li {
     display: inline-block;
-    float: left;
+    float: center;
     display: block;
     margin-right: 2.35765%;
     width: 31.76157%;
