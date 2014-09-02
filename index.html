@@ -13,7 +13,7 @@
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
 
-
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
 
@@ -27,16 +27,16 @@
 		        anchors:['Home', 'About', 'Skills', 'Projects', 'Contact'],
 		        scrollingSpeed: 700,
 		        menu: '#menu',
-		        navigation: true,
-		        navigationPosition: 'right',
+		        navigation: false,
+		        navigationPosition: 'left',
 		        navigationTooltips: ['Home', 'About', 'Skills', 'Projects', 'Contact'],
 		        slidesNavigation: true,
 		        slidesNavPosition: 'bottom',
 		        loopBottom: false,
 		        loopTop: false,
-		        loopHorizontal: false,
+		        loopHorizontal: true,
 		        autoScrolling: true,
-		        scrollOverflow: false,
+		        scrollOverflow: true,
 		        css3: false,
 		        paddingTop: '3em',
 		        paddingBottom: '10px',
@@ -48,6 +48,7 @@
 		        animateAnchor: true,
 		        sectionSelector: '.section',
 		        slideSelector: '.slide',
+
 
 		        //events
 		        onLeave: function(index, nextIndex, direction){},
@@ -172,92 +173,90 @@
 	    </div>
 	</div>
 	<div class="section" id="section3">
+		<div class = "slide" data-anchor="slide0">
 		<h1>Section 3: Projects</h1>
 			<div id="projects" class="works">
 				<div class="works-container">
 					<div class="works-content">
 			          <ul>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">Jackit</h2>
+			                <p class="project-text">The Handheld Experience</p>
+			                <p class="project-text">Jackit is an iOS Application built at LA Hacks by a team of 8 students. This game features accelerometer based controls to play the game and some great art work. Download it on the iOS App Store! Check it out!</p>
 			            </li>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">Emotionall</h2>
+			                <p class="project-text">What are you feeling?</p>
+			                <p class="project-text">Emotionall is a web application that helps manipulate your mood to whatever you type in. Utilizing the Soundcloud, Flickr, and Twitter API, this rails application curates content based on a search query. Check it out!</p>
 			            </li>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">Frugal Friends</h2>
+			                <p class="project-text">Coupons with Friends</p>
+			                <p class="project-text">Frugal Friends allows you to take advantages of the best coupons without requiring you to pay the upfront dollar amount by crowd sourcing the barrier to entry. This iOS application won second place at the UCSD Entrepreneurial Challenge. Check it out here!</p>
 			            </li>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">The HN Bump</h2>
+			                <p class="project-text">Correlating HN Upvotes and Github Stars</p>
+			                <p class="project-text">As part of the Third Annual GitHub Data Challenge, I analyzed the relationship between the increase in popularity of a GitHub repository and the popularity of a Hacker News post on the subject. Check out the findings here!</p>
 			            </li>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">The Stock Widget</h2>
+			                <p class="project-text">Your Portfolio, a Swipe Away</p>
+			                <p class="project-text">The stock widget is a realtime portfolio tracker built in Swift for iOS8. This update in Apple software brough widgets to iOS for for the first time and I was eager to take advantage. Check it out here!</p>
 			            </li>
 			            <li>
-			                <h3 class="center">WhoBorrowed</h3>
-			                <p>WhoBorrowed is a my latest project that I've been working on to learn the Ruby on Rails web framework. It's going to be a simplistic application to keep track of your items and belongings, stay tuned for the release!</p>
-			                <p>
-
-			                </p>
+			                <h2 class="project-title">Dine</h2>
+			                <p class="project-text">A Transformed Dining Experience</p>
+			                <p class="project-text">Dine is an iOS app that changes the way you eat out from the moment you walk in to a restaurant, to the moment you leave. Dine was voted to be the first place winner in UCSD's Spring Software Engineering course. Check it out here!</p>
 			            </li>
+			            <li>
+			                <h2 class="project-title">The Hunger Games</h2>
+			                <p class="project-text">Infinite Iterative Prisoner's Dilemma</p>
+			                <p class="project-text">The Hunger Games is a competition hosted by Brilliant.org in which participants are to create a bot that will compete in an Infinite Iterative Prisoner's Dilemma "game." Check out my bot here!</p>
+			            </li>
+			            <li>
+			                <h2 class="project-title">The Bing Bot</h2>
+			                <p class="project-text">$$$ 1 Search At a Time</p>
+			                <p class="project-text">The Bing Bot is a script I wrote to automate searches on Bing.com. Bing offers rewards based on the number of searches per day and this bot was made to ensure I wouldn't ever skip a day's search allotment. I've since decomissioned this bot due to ethical reasons.</p>
+			            </li>
+			            <li>
+			                <h2 class="project-title">The Seating Chart</h2>
+			                <p class="project-text">New Seat, New Partner, New day</p>
+			                <p class="project-text">For the CSE15L Course I tutor, I created a seating chart randomizer that will assign students a new unique seat and partner each day. It takes in a list of students and outputs an image with the seat number. Check it out here!</p>
+			            </li>
+			            <li>
+			                <h2 class="project-title">Arduino Audio Analyzer</h2>
+			                <p class="project-text">Watch Your Music Come Alive</p>
+			                <p class="project-text">The Arduino Audio Analyzer is an Arduino application that analyzes music it hears and creates light patterns on an external LED strip. Check it out here!</p>
+			            </li>
+			            <li>
+			                <h2 class="project-title">The iBeacon Book</h2>
+			                <p class="project-text">Tracking, Security, Reservations</p>
+			                <p class="project-text">I am currently reviewing a book on iBeacons and Bluetooth Low Energy. In the past I have used BLE and iBeacons in Dine to allow restaurant goers the ability to book a table as soon as they enter a restaurant.</p>
+			            </li>
+			            <li>
+			                <h2 class="project-title">Programming Challenge</h2>
+			                <p class="project-text">2nd Place - UCSD WIC & Facebook</p>
+			                <p class="project-text">Facebook and WIC host a basic algorithm based programming competition at UCSD. My partner and I place 2nd place overall.</p>
+			            </li>
+
 			          </ul>
 					</div>
 				</div>
 			</div>
+		</div>
+		
+		<div class = "slide" data-anchor="slide1">
+		<h1>Slide 1</h1>
+		</div>
+	
+		<div class = "slide" data-anchor="slide1">
+		<h1>Slide 1</h1>
+		</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<div class = "slide" data-anchor="slide1">
+		<h1>Slide 1</h1>
+		</div>
 	</div>
 	<div class="section" id="section4">
 		<h1>Contact me?</h1>

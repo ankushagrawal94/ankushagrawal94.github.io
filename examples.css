@@ -1379,3 +1379,12 @@ nav ul.background--dark li a, nav ul.background--light li a {
     display: none;
 }
 
+.project-text {
+    text-align: center;
+    font-size: 1em;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2em;
+}
