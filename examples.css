@@ -1388,3 +1388,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
     text-align: center;
     font-size: 2em;
 }
+
+.experience-title {
+    font-size: 3em;
+}
