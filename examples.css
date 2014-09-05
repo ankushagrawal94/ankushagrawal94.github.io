@@ -1390,5 +1390,20 @@ nav ul.background--dark li a, nav ul.background--light li a {
 }
 
 .experience-title {
-    font-size: 3em;
+    font-size: 2em;
 }
+
+.experience-table {
+    width: 50%;
+}
+
+.col-lg {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 8.333333333%;
+}
+
+.midsize{font-size:1.4em;line-height:1.28em}
