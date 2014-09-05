@@ -1407,3 +1407,67 @@ nav ul.background--dark li a, nav ul.background--light li a {
 }
 
 .midsize{font-size:1.4em;line-height:1.28em}
+
+
+.allTitles{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.websiteTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+    font-size: 4em;
+}
+
+.websiteSubtitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+    font-size: 1.75em;
+}
+
+.sectionTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+    font-size: 4em;
+}
+
+.aboutText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+    font-size: 2em;
+    width: 75%;
+    margin: 0 auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
