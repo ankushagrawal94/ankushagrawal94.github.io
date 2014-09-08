@@ -15,6 +15,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300,300italic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="examples.css" />
+	<link rel="stylesheet" type="text/css" href="animate.css" />
 	<link rel="stylesheet" href="media.css">
 
 	<!--<link href="bootstrap.css" rel="stylesheet">-->
@@ -44,12 +45,10 @@
 		        loopTop: false,
 		        loopHorizontal: true,
 		        autoScrolling: true,
-		        scrollOverflow: true,
+		        scrollOverflow: false,
 		        css3: false,
 		        paddingTop: '3em',
 		        paddingBottom: '10px',
-		        normalScrollElements: '#element1, .element2',
-		        normalScrollElementTouchThreshold: 5,
 		        keyboardScrolling: true,
 		        touchSensitivity: 15,
 		        continuousVertical: false,
@@ -94,18 +93,23 @@
 -->
 <div id="fullpage">
 	<div class="section active" id="section0">
-		<div class=websiteTitle>Ankush Agrawal</div>
-		<br> </br>
-		<div class="websiteSubtitle">Entrepreneur | Optimist | Engineer</div>
+		<div class="websiteTitle animated fadeInDown">Ankush Agrawal</div>
+		<div class="websiteSubtitle animated fadeInDown delay">Entrepreneur | Optimist | Engineer</div>
+		<a id="links" href="http://www.facebook.com/ankushagrawal94"> <i class="fa fa-facebook-square fa-2x animated bounceInDown delay-more"></i> </a>
+		&nbsp; &nbsp; &nbsp;
+		<a id="links" href="http://linkedin.com/in/ankushagrawal94"> <i class="fa fa-linkedin fa-2x animated bounceInDown delay-more"></i> </a>
+		&nbsp; &nbsp; &nbsp;
+		<a id="links" href="http://www.github.com/ankushagrawal94"><i class="fa fa-github fa-2x animated bounceInDown delay-more">  </i></a>
 		<br> </br>
 		<h2> This website is still under construction </h2>
+        
 	</div>
 
 	<div class="section" id="section1">
 		<div class="intro">
-			<div class="sectionTitle"> About </div>
+			<div class="sectionTitle animated fadeInDown delay"> About </div>
 			<br> </br>
-			<div class="aboutText">Hello There! My name is Ankush Agrawal. I am a developer, an entrepreneur, and a student at UC San Diego. I am driven by the thrill of creation, stories of success, and a desire to make the world a better place. One step at a time, I am gaining the skills I need to make it happen.</div>
+			<div class="aboutText animated fadeInDown delay">Hello There! My name is Ankush Agrawal. I am a developer, an entrepreneur, and a student at UC San Diego. I am driven by the thrill of creation, stories of success, and a desire to make the world a better place. One step at a time, I am gaining the skills I need to make it happen.</div>
 			<br></br>
 			<br></br>
 		</div>
@@ -116,13 +120,13 @@
 		    <div class="service-content">
 		      <h3 class="sectionTitle">Skills</h3>
 
-		      <!--<div class="services-grid">-->
+		      <!--considering adding a section here for all the programming languages that I know-->
 		      <div class="third">
 
 		        <i class="fa fa-mobile fa-4x"></i>
 		        <h3 class="card-header center">iOS Developer</h3>
 		        <div class="skillsText">
-		        	From the humble days of helloWorld in Objective-C to my published applications in Swift, iOS development is my coding forte. I like working the full stack in iOS and I look forward to continuing my work in this environment
+		        	I am more familiar with the iOS platform and the Cocoa framework than any other. I enjoy working the full stack in iOS and I look forward to continuing my work in Swift
 		        </div>
 		      </div>
 
@@ -138,7 +142,7 @@
 		        <i class="fa fa-briefcase fa-4x"></i>
 		        <h3 class="card-header center">Business</h3>
 		        <div class="skillsText">
-		        	Business, Entrepreneurship & Finance. Knowledge of these content areas help me determine the WHO, WHAT, WHEN, and WHERE for my development efforts. I study these topics so that I may better understand my role as a developer and entrepreneur
+		        	Business, Entrepreneurship & Finance. I study these topics to help me determine the WHO, WHAT, WHEN, and WHERE for role as a developer and entrepreneur.
 		        </div>
 		      </div>
 		      <!--
@@ -226,9 +230,9 @@
 			                	As part of the <a href="https://github.com/blog/1864-third-annual-github-data-challenge">Third Annual GitHub Data Challenge</a>, I analyzed the relationship between the increase in popularity of a GitHub repository and the popularity of a Hacker News post on the subject.
 			                </p>
 			                <p class="project-page-link"> 
-			                	<a href="www.github.com/FrugalFriends">Findings</a>
+			                	<a href="https://ankushagrawal94.github.io/TheHackerNewsBump">Findings</a>
 			                	 | 
-			                	<a href="www.github.com/FrugalFriends">Methods</a>
+			                	<a href="https://ankushagrawal94.github.io/TheHackerNewsBump/readMore.html">Methods</a>
 			                </p>  
 			            </li>
 
@@ -372,8 +376,9 @@
 	</div> -->
 	<div class="section" id="section4">
 		<div class="intro">
-			<h1>Contact me?</h1>
-			<p> Hi There! Interested in working on a project, talking about some new tech, hiring me, or just something that's on your mind? <a href="mailto:ankushagrawal94@gmail.com" >Email me</a> or reach out in any way. Don't be shy! I look forward to hearing from you!</p>
+			<div class="sectionTitle">Contact me?</div>
+			<br> </br>
+			<div class="aboutText"> Hi There! Interested in working on a project, talking about some new tech, hiring me, or discussing something that's on your mind? Shoot me an <a href="mailto:ankushagrawal94@gmail.com" >email</a> or reach out in any way. Don't be shy! I look forward to hearing from you!</div>
 		</div>
 		
 	</div>
