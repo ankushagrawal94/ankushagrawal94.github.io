@@ -48,7 +48,7 @@ abbr,acronym { border: 0;
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Roboto', sans-serif;
 	color: #333;
 	color: rgba(0,0,0,0.5);
 }
@@ -290,406 +290,18 @@ p{
 --------------------
 --------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto:400, 100, 100italic, 300, 300italic, 400italic, 500, 500italic, 700italic, 700, 900, 900italic|Roboto+Condensed:300italic, 400italic, 700italic, 400, 700, 300|RobotoDraft:400, 500, 700, 400italic);
-    @import url(http: //fonts.googleapis.com/css?family=Press+Start+2P);
     @import url(http: //code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css);
     * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-/*! responsive-nav.js 1.0.32 by @viljamis *//*.nav-collapse ul {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: block;
-    list-style: none;
-}
-.nav-collapse li {
-    width: 100%;
-    display: block;
-}
-.js .nav-collapse {
-    clip: rect(0 0 0 0);
-    max-height: 0;
-    position: absolute;
-    display: block;
-    overflow: hidden;
-    zoom: 1;
-}
-.nav-collapse.opened {
-    max-height: 9999px;
-}
-.disable-pointer-events {
-    pointer-events: none !important;
-}
-.nav-toggle {
-    -webkit-tap-highlight-color: transparent;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    user-select: none;
-}
-@media screen and (min-width: 40em) {
-    .js .nav-collapse {
-    position: relative;
-}
-.js .nav-collapse.closed {
-    max-height: none;
-}
-.nav-toggle {
-    display: none;
-}
-}html, body {
-    padding: 0;
-    margin: 0;
-    height: 100%;
-    width: 100%}
-body {
-    background-color: #00585f;
-    color: #fff;
-    font: 100% "Roboto",  "Roboto" Helvetica,  Arial,  sans-serif;
-    line-height: 1.75em;
-}
-.container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-}
-.container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.content {
-    z-index: 100;
-}
-@media screen and (max-width: 500px) {
-    .info {
-    font-size: 0.7em;
-}
-}.navigation {
-    width: 100%;
-    color: #00585f;
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    height: 60px;
-    z-index: 9999;
-    vertical-align: middle;
-}
-@media screen and (max-width: 500px) {
-    .navigation {
-    width: 100%}
-}.nav-toggle {
-    color: #fff;
-    text-decoration: none;
-    background: #004f55;
-    font-weight: 300;
-    text-align: center;
-    font-size: 0.9em;
-    width: 75px;
-    padding: 4px;
-    right: 0;
-    top: 0;
-    border-radius: 4px;
-    margin-right: 12px;
-    margin-top: 12px;
-    -webkit-transition: all 1 ease-in;
-    -moz-transition: all 1 ease-in;
-    transition: all 1 ease-in;
-    z-index: 1000;
-    float: right;
-}
-.nav-toggle:before {
-    content: '\f20e';
-    font-family: ionicons;
-    padding-right: 8px;
-    -webkit-transition: content 4s;
-    transition: content 4s;
-    z-index: 1000;
-}
-.nav-toggle.active {
-    -webkit-transition: content 4s;
-    transition: content 4s;
-}
-.nav-toggle.active:before {
-    content: '\f2d7';
-    font-family: ionicons;
-    padding-right: 8px;
-}
-nav {
-    color: #00585f;
-    background-color: #004f55;
-    background: none;
-    width: 100%;
-    height: 60px;
-    vertical-align: middle;
-    display: inline-block;
-    line-height: 60px;
-}
-@media screen and (max-width: 500px) {
-    nav {
-    background-color: #004f55;
-    width: 100%;
-    line-height: 60px;
-}
-}nav ul.nav-list {
-    list-style-type: none;
-    display: block;
-    margin: 0;
-    padding: 0;
-    font-weight: 300;
-    text-align: right;
-    vertical-align: middle;
-    line-height: 30px;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%}
-nav ul.nav-list:last-child {
-    margin-right: 0;
-}
-@media screen and (max-width: 500px) {
-    nav ul.nav-list {
-    width: 100%}
-}nav ul.nav-list li {
-    font-size: 1.25em;
-    font-variant: small-caps;
-    text-align: center;
-    display: inline;
-    vertical-align: middle;
-    line-height: 60px;
-    width: auto;
-    margin-right: 20px;
-    font-weight: 300;
-}
-nav ul.nav-list li:first-child {
-    display: none;
-}
-@media screen and (max-width: 500px) {
-    nav ul.nav-list li: first-child {
-    display: block;
-}
-}nav ul.nav-list li:last-child {
-    margin-right: 0;
-}
-@media screen and (max-width: 500px) {
-    nav ul.nav-list li {
-    border-bottom: 2px dotted #99bcbf;
-    display: block;
-    padding: 4px;
-    font-size: 1;
-    vertical-align: middle;
-    text-align: center;
-    margin: 0;
-}
-}nav ul.nav-list li a {
-    color: #00585f;
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-    line-height: 60px;
-    letter-spacing: 1px;
-}
-@media screen and (max-width: 500px) {
-    nav ul.nav-list li a {
-    color: #99bcbf;
-}
-}nav ul.nav-list li a.active {
-    color: #99bcbf;
-}
-@media screen and (max-width: 500px) {
-    nav ul.nav-list li a.active {
-    color: #99bcbf;
-}
-}nav ul.nav-list li a:hover {
-    will-change: transform;
-    color: #00585f;
-    font-weight: 700;
-    border-bottom: 4px solid #004f55;
-}
-nav .background--dark a, nav .background--light a {
-    color: #fff;
-}
-nav a.background--dark, nav a.background--light {
-    color: #fff;
-}
-nav ul.background--dark li, nav ul.background--light li {
-    color: #fff;
-}
-nav ul.background--dark li a, nav ul.background--light li a {
-    color: #fff;
-    font-weight: 300;
-}
-.opened {
-    max-height: 100%;
-    height: 100%}
-.brand {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    display: block;
-    vertical-align: middle;
-}
-.brand:last-child {
-    margin-right: 0;
-}
-@media screen and (max-width: 500px) {
-    .brand {
-    display: none;
-}
-}.brand-logo {
-    text-decoration: none;
-    font-size: 1.4em;
-    color: #00585f;
-    letter-spacing: 3px;
-    font-weight: 700;
-}
-.brand-logo:hover {
-    will-change: transform;
-    color: #004f55;
-}
-.hidden-brand {
-    display: none;
-    visibility: hidden;
-}
-@media screen and (max-width: 500px) {
-    .hidden-brand {
-    display: block;
-}
-}.test {
-    width: 100%;
-    position: relative;
-}
-.header {
-    background-color: #99bcbf;
-    background-image: url("../images/cubes.png");
-    background-size: auto;
-    position: relative;
-    width: 100%;
-    height: 750px;
-    color: #004f55;
-    padding: 0;
-    margin: 0;
-}
-@media screen and (max-width: 500px) {
-    .header {
-    color: #004f55;
-    height: 500px;
-}
-}.message-container {
-    max-width: 68em;
-    margin-left: auto;
-    margin-right: auto;
-    height: 650px;
-    position: relative;
-    display: block;
-}
-.message-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-@media screen and (max-width: 500px) {
-    .message-container {
-    text-align: center;
-    height: 800px;
-}
-}.message {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
-    position: absolute;
-    font-weight: 300;
-    top: 65%;
-    height: 500px;
-    line-height: 2em;
-    margin-top: -250px;
-    text-align: center;
-}
-.message:last-child {
-    margin-right: 0;
-}
-@media screen and (max-width: 500px) {
-    .message {
-    float: left;
-    display: block;
-    margin-right: 7.42297%;
-    width: 100%;
-    margin-left: 0%;
-    top: 50%;
-    height: 600px;
-    margin-top: -300px;
-    font-size: 0.8em;
-    display: block;
-    text-align: center;
-}
-.message:last-child {
-    margin-right: 0;
-}
-}.message .hello {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    font-size: 4em;
-    font-family: "Press Start 2P",  "Roboto",  Helvetica,  Arial,  sans-serif;
-    line-height: 2em;
-}
-@media screen and (max-width: 500px) {
-    .message .hello {
-    font-size: 1.5em;
-    text-align: center;
-    padding: 8px;
-}
-}.message .subtext {
-    color: #004f55;
-    position: relative;
-    text-align: center;
-    margin: 0 auto;
-}
-@media screen and (max-width: 500px) {
-    .message .subtext {
-    text-align: center;
-    margin: 0;
-}
-}.message span.cursor {
-    display: inline-block;
-    font-size: 1.5em;
-    color: #00585f;
-    vertical-align: text-top;
-    margin-top: -0.5em;
-    text-align: left;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    font-weight: normal;
-    -webkit-animation: blink 1s linear 0s infinite;
-    -moz-animation: blink 1s linear 0s infinite;
-    animation: blink 1s linear 0s infinite;
-}
-.message .hello {
-    font-size: 2.5em;
-    text-align: center;
-}
-@media screen and (max-width: 500px) {
-    .message .hello {
-    font-size: 1.75em;
-}
-}.message a {
-    color: #99bcbf;
-    text-decoration: none;
-}
+
 .intro, .check {
     weight: 500;
     text-align: center;
     font-size: 1.2em;
-}*/
+}
 .intro {
     margin-top: 24px;
     margin-bottom: 24px;
@@ -844,6 +456,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
     margin-right: 0;
 }
 }.service-content .third .card-header {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     color: #343838;
 }
@@ -1380,7 +993,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
 }
 
 .project-text {
-    text-align: center;
+    text-align: left;
     font-size: 1em;
 }
 
@@ -1440,7 +1053,7 @@ nav ul.background--dark li a, nav ul.background--light li a {
     margin:0;
     padding:0;
     color:#444;
-    font-size: 4em;
+    font-size: 2.5em;
 }
 
 .aboutText{
@@ -1450,12 +1063,24 @@ nav ul.background--dark li a, nav ul.background--light li a {
     margin:0;
     padding:0;
     color:#444;
-    font-size: 2em;
-    width: 75%;
+    font-size: 1.7em;
+    width: 50%;
     margin: 0 auto;
     
 }
 
+.skillsText{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding-top:15px;
+    color:#444;
+    font-size: .9em;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
 
 
 
