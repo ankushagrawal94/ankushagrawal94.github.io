@@ -992,16 +992,6 @@ p{
     display: none;
 }
 
-.project-text {
-    text-align: left;
-    font-size: 1em;
-}
-
-.project-title {
-    text-align: center;
-    font-size: 2em;
-}
-
 .experience-title {
     font-size: 2em;
 }
@@ -1053,7 +1043,7 @@ p{
     margin:0;
     padding:0;
     color:#444;
-    font-size: 2.5em;
+    font-size: 2.75em;
 }
 
 .aboutText{
@@ -1082,17 +1072,31 @@ p{
     text-align: left;
 }
 
+.project-text {
+    padding: 0px;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 300;
+}
+.project-subtitle {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 1em;
+    font-style: italic;
+}
 
+.project-title {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
+.project-page-link {
+    text-align: right;
+    font-size: 1.0em;
+    font-weight: bold;
+}
 
 
